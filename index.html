@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <title>豆皮的世界</title>
+  <style>
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 0;
+      margin: 20px 0;
+      list-style: none;
+    }
+
+    nav ul li {
+      flex: 1 1 30%;
+      max-width: 200px;
+      box-sizing: border-box;
+    }
+
+    nav ul li a.active {
+      background-color: #9D7553;
+      color: white;
+      border-bottom: none;
+    }
+
+    .hero {
+      background-color:#F7E6B7;
+      padding: 40px 20px;
+      text-align: center;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      font-size: 1.2em;
+      color: #4B3621;
+    }
+
+    header {
+      background-color: #FFF0D9; 
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 2px solid #D2B48C;
+    }
+
+    body {
+      background: linear-gradient(to bottom, #FFF8DC, #D2B48C);
+      color: #4B3621;
+      margin: 0;
+      font-family: "Noto Sans TC", sans-serif;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    a {
+      display: block;
+      width: 200px;
+      height: 60px;
+      background-color: #BE9D77;
+      color: #4D3900;
+      font-weight: bold;
+      border-radius: 25px;
+      text-align: center;
+      line-height: 60px;
+      text-decoration: none;
+      border-bottom: 1px dashed;
+    }
+
+    a:hover {
+      background-color: #9D7553;
+      color: #ffffff;
+    }
+
+    a:active {
+      background-color: #BEBAB7;
+      color: black;
+    }
+
+
+    p {
+      margin: 20px 10px;
+    }
+
+    .intro-container {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      margin: 40px 0;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .intro-container .box {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      overflow: hidden;
+      flex-shrink: 0;
+      background-color: transparent;
+      border: 5px solid transparent;
+      transition: all 0.5s;
+      cursor: pointer;
+    }
+
+    .intro-container .box:hover {
+      border-color:#DF797B;
+      transform: scale(1.1);
+    }
+
+    .intro-container .box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      transition: all 0.5s;
+      display: block;
+    }
+
+    .text {
+      flex: 1;
+      min-width: 250px;
+      color: #4B3621;
+    }
+
+    footer {
+      text-align: right;
+      padding: 10px 20px;
+      color: #4B3621;
+      font-size: 0.9em;
+    }
+
+    .top-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #BE9D77;
+      color: #4D3900;
+      padding: 10px 15px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      transition: background-color 0.3s ease;
+    }
+
+    .top-button:hover {
+      background-color: #9D7553;
+      color: white;
+    }
+  </style>
+</head>
+<body id="top">
+  <div class="container">
+    <!-- 頁首 -->
+    <header>
+      <h1>🐾 豆皮的世界 🐾</h1>
+      <p>歡迎來到豆皮的專屬小宇宙</p>
+    </header>
+
+    <!-- 導覽列 -->
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">首頁</a></li>
+        <li><a href="about.html">關於豆皮</a></li>
+        <li><a href="gallery.html">豆皮的推薦</a></li>
+        <li><a href="quotes.html">豆皮小劇場</a></li>
+        <li><a href="question.html">豆皮提問箱</a></li>
+        <li><a href="contact.html">聯絡豆皮</a></li>
+      </ul>
+    </nav>
+
+    <!-- 主內容 -->
+    <section class="hero">
+      <h2>歡迎來到豆皮的世界！</h2>
+      <p>這裡是豆皮的專屬小宇宙，讓我們一起認識這隻可愛的小虎斑吧！</p>
+    </section>
+
+    <main>
+      <section class="intro">
+        <div class="intro-container">
+          <div class="box">
+            <img src="IMG_2677.jpg" alt="豆皮" />
+          </div>
+          <div class="text">
+            <h2>誰是豆皮？</h2>
+            <p>
+              豆皮是一隻6歲的米克斯，性格難以捉模，像外星來的貓一樣，最愛偷吃人類的食物、鑽紙箱，也喜歡偷啃家裡發財樹的葉子。
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 頁尾 -->
+    <footer>
+      <p>&copy; 2025 豆皮的世界｜由喵奴-老穆製作</p>
+    </footer>
+
+    <!-- TOP 按鈕 -->
+    <a href="#top" class="top-button">↑ TOP</a>
+  </div>
+</body>
+</html>
+

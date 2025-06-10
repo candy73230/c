@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <title>聯絡豆皮</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom, #FFF8DC, #D2B48C);
+      color: #4B3621;
+      font-family: "Noto Sans TC", sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    header {
+      background-color: #FFF0D9;
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 2px solid #D2B48C;
+      margin-bottom: 20px;
+    }
+
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 0;
+      margin: 20px 0;
+      list-style: none;
+    }
+
+    nav ul li {
+      flex: 1 1 30%;
+      max-width: 200px;
+    }
+
+    nav ul li a {
+      display: block;
+      width: 200px;
+      height: 60px;
+      background-color: #BE9D77;
+      color: #4D3900;
+      font-weight: bold;
+      border-radius: 25px;
+      text-align: center;
+      line-height: 60px;
+      text-decoration: none;
+      border-bottom: 1px dashed;
+      transition: background-color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: #9D7553;
+      color: white;
+    }
+
+    nav ul li a.active {
+      background-color: #9D7553;
+      color: white;
+      border-bottom: none;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 30px;
+      color: #4B3621;
+    }
+
+    form {
+      background-color: #FFF0D9;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 4px 10px rgba(210,180,140,0.4);
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 10px;
+      border: 1px solid #D2B48C;
+      box-sizing: border-box;
+      font-family: inherit;
+      font-size: 1em;
+    }
+
+    textarea {
+      height: 120px;
+      resize: vertical;
+    }
+
+    button {
+      margin-top: 20px;
+      background-color: #BE9D77;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #9D7553;
+    }
+
+    footer {
+      text-align: right;
+      padding: 10px 20px;
+      font-size: 0.9em;
+      margin-top: 40px;
+    }
+    .top-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #BE9D77;
+      color: #4D3900;
+      padding: 10px 15px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      transition: background-color 0.3s ease;
+    }
+
+    .top-button:hover {
+      background-color: #9D7553;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container" id="top">
+    <header>
+      <h1>聯絡我 📨</h1>
+      <p>想問豆皮什麼都可以喵～</p>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="about.html">關於豆皮</a></li>
+        <li><a href="gallery.html">豆皮的推薦</a></li>
+        <li><a href="quotes.html">豆皮小劇場</a></li>
+        <li><a href="question.html">豆皮提問箱</a></li>
+        <li><a href="contact.html" class="active">聯絡豆皮</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>留下你的問題給豆皮吧！</h2>
+      <form action="https://formsubmit.co/candy73230@gmail.com" method="POST">
+        <label for="name">你的名字</label>
+        <input type="text" id="name" name="name" placeholder="貓奴小明" required>
+
+        <label for="email">電子信箱</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+        <label for="message">想問豆皮的話</label>
+        <textarea id="message" name="message" placeholder="豆皮今天吃了什麼？" required></textarea>
+        <input type="hidden" name="_subject" value="豆皮收到一則新訊息！">
+        <input type="hidden" name="_template" value="box">
+        <input type="hidden" name="_captcha" value="false">
+
+        <button type="submit">送出問題 🐾</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 豆皮的世界｜由喵奴-老穆製作</p>
+    </footer>
+
+    <!-- TOP 按鈕 -->
+    <a href="#top" class="top-button">↑ TOP</a>
+  </div>
+</body>
+</html>
